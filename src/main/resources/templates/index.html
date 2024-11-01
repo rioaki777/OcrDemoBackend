@@ -1,0 +1,33 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="${title}"></title>
+</head>
+<link type="text/css" href="static/css/index.css" rel="stylesheet" />
+
+<script>
+    // TODO
+</script>
+
+<body>
+    <div id="main" >
+        <h1 th:text="${title}"></h1>
+
+        <div class="flexbox">
+            <label class="w-20" for="image-name">画像</label>
+
+            <input id="image-name" type="text" />
+            <button class="btn btn-outline-dark btn-sm" id="select-img-btn" type="button">ファイル選択</button>
+        </div>
+
+        <div class="text-center mt-5">
+            <button class="btn btn-outline-primary btn-lg w-25" id="detect-btn" type="button">OCR開始</button>
+        </div>
+    </div>
+
+    <form id="uploadForm" enctype="multipart/form-data" method="post">
+        <input id="ocr-image" name="ocr-image" type="file" accept=".png" style="display: none;" />
+    </form>
+</body>
+</html>
