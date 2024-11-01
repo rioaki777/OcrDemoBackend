@@ -1,4 +1,4 @@
-[Qiita の記事](To be updated) にて紹介しているプロジェクトのバックエンドです。
+[Qiita の記事](https://qiita.com/RioAki/items/639d7ab5f6afbc59e7d8) にて紹介しているプロジェクトのバックエンドです。
 
 ## Config
 
@@ -14,11 +14,11 @@ pythonDir = "C:/.../python.exe"
 
 
 ## Build
-```bash
+```
 ./gradlew build
 ```
 
 ## Running
-```bash
+```
 ./gradlew run
 ```
